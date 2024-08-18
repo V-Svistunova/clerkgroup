@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+  "title":"Главная"
+})
+<body>
+  
+  <div class="">
+    
+  </div>
+  @@include('html/header.html',{})
+
+  <div class="wrapper">
+    <main class="main">
+
+      <section class="hero" style="background-image: url(@img/background-top.svg);">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__left">
+              <h1 class="hero__title">Monitor your business on real-time dashboard</h1>
+              <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Elementum nisi aliquet volutpat pellentesque volutpat est. 
+                Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
+              <button class="button hero__cta-button">Try for free</button>
+            </div>
+            <div class="hero__right">
+              <img class="hide-mob" loading="lazy" src="@img/main-screen.svg" alt="main">
+              <img class="hide-desk" loading="lazy" src="@img/main-screen-mob.svg" alt="main">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features">
+        <div class="container">
+          <h2 class="features__title">Main Features</h2>
+          <p class="features__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Elementum nisi aliquet volutpat pellentesque volutpat est. 
+            Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. 
+            Vitae et, tortor pulvinar risus pulvinar sit amet. 
+            Id vel in nam malesuada.</p>
+          <div class="features__list">
+              <div class="features__item">
+                  <img class="features__item-icon" src="@img/features/clock.svg" alt="Monitoring 24/7">
+                  <h3 class="features__item-title">Monitoring 24/7</h3>
+                  <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="features__item">
+                  <img class="features__item-icon" src="@img/features/PC.svg" alt="Widget System">
+                  <h3 class="features__item-title">Widget System</h3>
+                  <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="features__item">
+                  <img class="features__item-icon" src="@img/features/Rocket.svg" alt="Best Performance">
+                  <h3 class="features__item-title">Best Performance</h3>
+                  <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Section -->
+      <section class="registration">
+        <div class="container">
+          <div class="registration__content">
+            <div class="registration__map">
+              <img class="registration__map-img" src="@img/chart-4.svg" alt="World Map">
+            </div>
+            <div class="registration__form-container">
+                <h2 class="registration__title">Registration</h2>
+                <form class="registration__form">
+                    <label class="registration__form-label" for="name">Name *</label>
+                    <input class="registration__form-input" type="text" id="name" name="name" placeholder="Full Name">
+                    
+                    <label class="registration__form-label" for="department">Department *</label>
+                    <select class="registration__form-select" id="department" name="department">
+                        <option value="">Please Select</option>
+                        <option value="sales">Sales</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                    
+                    <label class="registration__form-label" for="email">Email address *</label>
+                    <input class="registration__form-input" type="email" id="email" name="email" placeholder="example@gmail.com">
+                    
+                    <label class="registration__form-label" for="phone">Phone</label>
+                    <input class="registration__form-input" type="tel" id="phone" name="phone" placeholder="Phone number">
+                    
+                    <div class="registration__form-button-wrap">
+                      <button class="registration__form-button" type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottom" style="background-image: url(@img/background-bottom.svg);">
+
+        <!-- Pricing Section -->
+        <section class="pricing">
+          <div class="container">
+            <h2 class="pricing__title">Pricing Plans</h2>
+            <p class="pricing__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet
+              volutpat pellentesque volutpat est. </p>
+            <div class="pricing__cards">
+                <div class="pricing__card">
+                    <h3 class="pricing__card-title">Starter</h3>
+                    <p class="pricing__card-users">up to 3 users</p>
+                    <div class="pricing__card-price">$29</div>
+                    <div class="pricing__card-subtile">per month</div>
+                    <button class="pricing__card-button">Order</button>
+                </div>
+                <div class="pricing__card pricing__card--standard">
+                    <h3 class="pricing__card-title">Standard</h3>
+                    <p class="pricing__card-users">up to 20 users</p>
+                    <div class="pricing__card-price">$99</div>
+                    <div class="pricing__card-subtile">per month</div>
+                    <button class="pricing__card-button">Order</button>
+                </div>
+                <div class="pricing__card pricing__card--premium">
+                    <h3 class="pricing__card-title">Premium</h3>
+                    <p class="pricing__card-users">up to 200 users</p>
+                    <div class="pricing__card-price">$299</div>
+                    <div class="pricing__card-subtile">per month</div>
+                    <button class="pricing__card-button">Order</button>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        @@include('html/footer.html',{})
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/app.min.js"></script>
+</body>
+</html>

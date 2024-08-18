@@ -1,0 +1,91 @@
+.pricing {
+  padding: 250px 20px 50px;
+  text-align: center;
+
+  &__title {
+      font-size: 2rem;
+      color: $text-color;
+  }
+
+  &__subtitle {
+      margin-bottom: 30px;
+      color: $muted-text-color;
+  }
+
+  &__cards {
+      display: flex;
+      gap: 15px;
+      justify-content: space-around;
+      overflow-x: auto;
+  }
+
+  &__card {
+      width: 30%;
+      min-width: 320px;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 10px 0;
+      border: 1px solid $muted-border-color;
+      color: $text-color;
+
+    &-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    &-users {
+        margin-bottom: 15px;
+        color: $muted-text-color;
+    }
+
+    &-price {
+        font-size: 2.5rem;
+        margin: 20px 0 0;
+        border-top: 1px solid $light-text-color;
+    }
+
+    &-subtitle {
+        color: $muted-text-color;
+        margin-bottom: 20px;
+    }
+
+    &-button {
+        @extend .button-gray;
+        margin-top: 20px;
+    }
+
+    &--standard {
+        background-color: $main-color;
+        color: $primary-color;
+    }
+
+    &--standard  &-button {
+        @extend .button;
+    }
+
+    &--standard &-price {
+        color: $primary-color;
+    }
+
+    &--premium {
+    background-color: $primary-color;
+    }
+
+  }
+}
+
+
+@media (max-width: 780px) {
+
+    .pricing {
+        padding: 150px 0 20px;
+        text-align: left;
+
+        &__cards {
+            margin: 0 -10px;
+            padding: 0 10px;
+            text-align: center;
+        }
+    }
+
+}

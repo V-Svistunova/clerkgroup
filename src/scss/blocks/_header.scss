@@ -1,0 +1,59 @@
+.header {
+  padding: 10px 0;
+  background-color: $primary-color;
+
+  &-bottom {
+    background-position: bottom center;
+  }
+
+  &__nav {
+    @include flex-center;
+    justify-content: space-between;
+    padding: 0 $padding-base;
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  &__menu {
+    display: flex;
+
+    &-item {
+      margin-left: 20px;
+      font-size: 1rem;
+      color: $light-text-color;
+    }
+
+    &-link {
+      color: $muted-text-color;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+
+  &__sign-up {
+    @extend .button-gray;
+  }
+  
+}
+
+
+@media (max-width: 780px) {
+
+  .header {
+
+    &__nav {
+      padding: 0;
+    }
+
+  }
+
+}

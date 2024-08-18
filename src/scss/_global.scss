@@ -1,0 +1,112 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	min-width: 320px;
+  font-family: $font-family;
+  background-color: $background-color;
+  font-size: $font-size-base;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  min-width: 238px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: $accent-color;
+  color: $text-color;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $background-accent-color;
+    color: $text-color;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $background-primary-color;
+    color: $text-color;
+  }
+}
+
+.button-gray {
+  min-width: 238px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: $muted-text-color;
+  border: 1px solid $muted-border-color;
+  cursor: pointer;
+  line-height: 1;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $muted-border-color;
+    color: $text-color;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $background-secondary-color;
+    color: $text-color;
+  }
+}
+
+
+
+.bottom {
+  margin-top: -100px;
+  background-position: top;
+  background-size: cover ;
+}
+
+.hide-mob {
+  display: flex !important;
+}
+
+.hide-desk {
+  display: none !important;
+}
+
+@media (max-width: 780px) {
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .hide-mob {
+    display: none !important;
+  }
+  
+  .hide-desk {
+    display: flex !important;
+  }
+
+}
